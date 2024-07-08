@@ -1,0 +1,58 @@
+1. inside container 
+
+    button - submit
+
+    div - img, h1, msg, ok button
+
+ 2. for div,
+
+        position: abs
+        top:0;
+        left:50%
+
+        transform: translate(-50%,-50%) scale(0.1);
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+
+3. another class  for div
+
+        top:50%;
+        transform: translate(-50%,-50%) scale(1);
+        visibility: visible;
+
+4. js
+
+    2 fn 
+
+         const popupElement = document.getElementById("pop-up");
+
+        const openPopup = () => {
+
+            popupElement.classList.add("open-pop-up");
+        }
+
+        const closePopup = () => {
+
+            popupElement.classList.remove("open-pop-up");
+        }
+
+
+1. always specify button type
+
+2. transition: 
+
+    change in property of next class(if different class applied on same element, the diffrence in values of same property applied to transition)
+
+3. absolute position
+
+    if no parent elmt, move according to page
+
+4. getElementById() 
+
+        returns an element with a specified value.
+
+5.  getElementsByClassName() 
+
+     returns a collection of elements with a specified class name(s).
+
+
